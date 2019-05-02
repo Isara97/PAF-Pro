@@ -7,9 +7,68 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <style>
 	.w3-sidebar a {font-family: "Roboto", sans-serif}
 	body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+	/* define a fixed width for the entire menu */
+	.navigation {
+		width: 240px;
+	}
+
+	/* reset our lists to remove bullet points and padding */
+	.mainmenu, .submenu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* make ALL links (main and submenu) have padding and background color */
+	.mainmenu a {
+		display: block;
+		text-decoration: none;
+		padding: 10px;
+		color: #000;
+	}
+
+	/* add hover behaviour */
+	.mainmenu a:hover {
+		background-color: #85C1E9;
+	}
+
+
+	/* when hovering over a .mainmenu item,
+      display the submenu inside it.
+      we're changing the submenu's max-height from 0 to 200px;
+    */
+
+	.mainmenu li:hover .submenu {
+		display: block;
+		max-height: 200px;
+	}
+
+	/*
+      we now overwrite the background-color for .submenu links only.
+      CSS reads down the page, so code at the bottom will overwrite the code at the top.
+    */
+
+	.submenu a {
+		background-color: #999;
+	}
+
+	/* hover behaviour for links inside .submenu */
+	.submenu a:hover {
+		background-color: #666;
+	}
+
+	/* this is the initial state of all submenus.
+      we set it to max-height: 0, and hide the overflowed content.
+    */
+	.submenu {
+		overflow: hidden;
+		max-height: 0;
+		-webkit-transition: all 0.5s;
+	}
 </style>
 <body class="w3-content" style="max-width:1200px">
 
@@ -17,28 +76,41 @@
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
 	<div class="w3-container w3-display-container w3-padding-16">
 		<i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-		<h3 class="w3-wide"><b>LOGO</b></h3>
+		<h3 class="w3-wide"><b>PAF E-COM</b></h3>
 	</div>
-	<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-		<a href="#" class="w3-bar-item w3-button">Shirts</a>
-		<a href="#" class="w3-bar-item w3-button">Dresses</a>
-		<a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-			Jeans <i class="fa fa-caret-down"></i>
-		</a>
-		<div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-			<a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-			<a href="#" class="w3-bar-item w3-button">Relaxed</a>
-			<a href="#" class="w3-bar-item w3-button">Bootcut</a>
-			<a href="#" class="w3-bar-item w3-button">Straight</a>
-		</div>
-		<a href="#" class="w3-bar-item w3-button">Jackets</a>
-		<a href="#" class="w3-bar-item w3-button">Gymwear</a>
-		<a href="#" class="w3-bar-item w3-button">Blazers</a>
-		<a href="#" class="w3-bar-item w3-button">Shoes</a>
+
+	<div class="navigation">
+		<ul class="mainmenu">
+			<li><a href="" style="background-color: #2874A6;color: whitesmoke">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">All categories <i class="fas fa-chevron-down" style="float: right"></i></a>
+				<ul class="submenu">
+					<li><a href="">Tops</a></li>
+					<li><a href="">Bottoms</a></li>
+					<li><a href="">Footwear</a></li>
+				</ul>
+			</li>
+			<li><a href="">Products & Services <i class="fas fa-chevron-down" style="float: right"></i></a>
+				<ul class="submenu">
+					<li><a href="">Tops</a></li>
+					<li><a href="">Bottoms</a></li>
+					<li><a href="">Footwear</a></li>
+				</ul>
+			</li>
+			<li><a href="">Services & Membership <i class="fas fa-chevron-down" style="float: right"></i></a>
+				<ul class="submenu">
+					<li><a href="">Tops</a></li>
+					<li><a href="">Bottoms</a></li>
+					<li><a href="">Footwear</a></li>
+				</ul>
+			</li>
+		</ul>
 	</div>
+
 	<a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
 	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
 	<a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+
 </nav>
 
 <!-- Top menu on small screens -->
@@ -58,7 +130,7 @@
 
 	<!-- Top header -->
 	<header class="w3-container w3-xlarge">
-		<p class="w3-left">Jeans</p>
+		<p class="w3-left">E-commerce web application</p>
 		<p class="w3-right">
 			<i class="fa fa-shopping-cart w3-margin-right"></i>
 			<i class="fa fa-search"></i>
@@ -67,11 +139,11 @@
 
 	<!-- Image header -->
 	<div class="w3-display-container w3-container">
-		<img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+		<img src="<?php echo base_url("assets/e01.jpg");?>" style="width:100%">
 		<div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-			<h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-			<h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-			<h1 class="w3-hide-small">COLLECTION 2016</h1>
+			<h1 class="w3-jumbo w3-hide-small">New collections</h1>
+			<h1 class="w3-hide-large w3-hide-medium">New collections</h1>
+			<h1 class="w3-hide-small">COLLECTION 2019</h1>
 			<p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
 		</div>
 	</div>
