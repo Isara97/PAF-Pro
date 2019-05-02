@@ -34,6 +34,7 @@
 	/* add hover behaviour */
 	.mainmenu a:hover {
 		background-color: #85C1E9;
+		color: whitesmoke;
 	}
 
 
@@ -53,12 +54,13 @@
     */
 
 	.submenu a {
-		background-color: #999;
+		background-color: #154360;
+		color: whitesmoke;
 	}
 
 	/* hover behaviour for links inside .submenu */
 	.submenu a:hover {
-		background-color: #666;
+		background-color: #85C1E9;
 	}
 
 	/* this is the initial state of all submenus.
@@ -144,7 +146,7 @@
 			<h1 class="w3-jumbo w3-hide-small">New collections</h1>
 			<h1 class="w3-hide-large w3-hide-medium">New collections</h1>
 			<h1 class="w3-hide-small">COLLECTION 2019</h1>
-			<p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+			<p><a href="#jeans" class="w3-button w3-padding-large w3-large" style="background-color: #154360">SHOP NOW</a></p>
 		</div>
 	</div>
 
@@ -156,11 +158,11 @@
 	<div class="w3-row w3-grayscale">
 		<div class="w3-col l3 s6">
 			<div class="w3-container">
-				<img src="/w3images/jeans1.jpg" style="width:100%">
+				<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 				<p>Ripped Skinny Jeans<br><b>$24.99</b></p>
 			</div>
 			<div class="w3-container">
-				<img src="/w3images/jeans2.jpg" style="width:100%">
+				<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 				<p>Mega Ripped Jeans<br><b>$19.99</b></p>
 			</div>
 		</div>
@@ -168,7 +170,7 @@
 		<div class="w3-col l3 s6">
 			<div class="w3-container">
 				<div class="w3-display-container">
-					<img src="/w3images/jeans2.jpg" style="width:100%">
+					<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 					<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
@@ -177,19 +179,19 @@
 				<p>Mega Ripped Jeans<br><b>$19.99</b></p>
 			</div>
 			<div class="w3-container">
-				<img src="/w3images/jeans3.jpg" style="width:100%">
+				<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 				<p>Washed Skinny Jeans<br><b>$20.50</b></p>
 			</div>
 		</div>
 
 		<div class="w3-col l3 s6">
 			<div class="w3-container">
-				<img src="/w3images/jeans3.jpg" style="width:100%">
+				<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 				<p>Washed Skinny Jeans<br><b>$20.50</b></p>
 			</div>
 			<div class="w3-container">
 				<div class="w3-display-container">
-					<img src="/w3images/jeans4.jpg" style="width:100%">
+					<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 					<span class="w3-tag w3-display-topleft">Sale</span>
 					<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
@@ -201,18 +203,18 @@
 
 		<div class="w3-col l3 s6">
 			<div class="w3-container">
-				<img src="/w3images/jeans4.jpg" style="width:100%">
+				<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 				<p>Vintage Skinny Jeans<br><b>$14.99</b></p>
 			</div>
 			<div class="w3-container">
-				<img src="/w3images/jeans1.jpg" style="width:100%">
+				<img src="<?php echo base_url("assets/Images/n01.jpg");?>" style="width:100%">
 				<p>Ripped Skinny Jeans<br><b>$24.99</b></p>
 			</div>
 		</div>
 	</div>
 
 	<!-- Subscribe section -->
-	<div class="w3-container w3-black w3-padding-32">
+	<div class="w3-container w3-padding-32" style="background-color: #34495E;color: whitesmoke">
 		<h1>Subscribe</h1>
 		<p>To get special offers and VIP treatment:</p>
 		<p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
@@ -230,7 +232,7 @@
 					<p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
 					<p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
 					<p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-					<button type="submit" class="w3-button w3-block w3-black">Send</button>
+					<button type="submit" class="w3-button w3-block" style="background-color: #273746;color: whitesmoke;">Send</button>
 				</form>
 			</div>
 
@@ -256,17 +258,17 @@
 				<p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
 				<p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
 				<br>
-				<i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-				<i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-				<i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-				<i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
-				<i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-				<i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+				<i class="fas fa-facebook-official w3-hover-opacity w3-large"></i>
+				<i class="fas fa-instagram w3-hover-opacity w3-large"></i>
+				<i class="fas fa-snapchat w3-hover-opacity w3-large"></i>
+				<i class="fas fa-pinterest-p w3-hover-opacity w3-large"></i>
+				<i class="fas fa-twitter w3-hover-opacity w3-large"></i>
+				<i class="fas fa-linkedin w3-hover-opacity w3-large"></i>
 			</div>
 		</div>
 	</footer>
 
-	<div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+	<div class="w3-center w3-padding-24" style="background-color: #273746;color: whitesmoke">Powered by PAF - pro</div>
 
 	<!-- End page content -->
 </div>
