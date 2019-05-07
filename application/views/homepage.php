@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <style>
+
 	.w3-sidebar a {font-family: "Roboto", sans-serif}
 	body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 	/* define a fixed width for the entire menu */
@@ -99,11 +100,11 @@
 					<li><a href="">Footwear</a></li>
 				</ul>
 			</li>
-			<li><a href="">Services & Membership <i class="fas fa-chevron-down" style="float: right"></i></a>
+			<li><a href="">Membership <i class="fas fa-chevron-down" style="float: right"></i></a>
 				<ul class="submenu">
-					<li><a href="">Tops</a></li>
-					<li><a href="">Bottoms</a></li>
-					<li><a href="">Footwear</a></li>
+					<li><a href="">Login</a></li>
+					<li><a href="">Register</a></li>
+
 				</ul>
 			</li>
 		</ul>
